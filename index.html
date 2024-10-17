@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <label for="bot-select">Choose a bot:</label>
+    <select id="bot-select" onchange="selectBot()">
+      <option value="personalFinance">Personal Finance Advisor</option>
+      <option value="languageTutor">Language Tutor</option>
+      <option value="recipeBot">Recipe Suggestion</option>
+      <option value="motivationBot">Motivational Coach</option>
+      <option value="triviaBot">Trivia Quiz</option>
+      <option value="bookRecs">Book Recommendation</option>
+      <option value="mentalHealth">Mental Health Support</option>
+      <option value="travelAdvisor">Travel Advisor</option>
+      <option value="workoutTrainer">Workout Trainer</option>
+      <option value="interviewCoach">Job Interview Coach</option>
+    </select>
+    <div id="chat-interface">
+      <div id="chat-output"></div>
+      <input type="text" id="user-input" placeholder="Type your message here" />
+      <button onclick="handleChat()">Send</button>
+    </div>
+  </body>
+</html>
